@@ -199,7 +199,7 @@ body {
     padding: 20px;
     text-align: center;
     color: #eee;
-    position: absolute;
+    position: relative;
     bottom: 0px;
 }
 
@@ -312,4 +312,8 @@ body {
     #about p {
         font-size: 16px;
     }
+}
+
+form div p a{
+    cursor: pointer;
 }
