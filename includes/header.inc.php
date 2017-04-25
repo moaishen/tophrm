@@ -24,7 +24,7 @@
         <div class="collapse navbar-collapse" id="navbar-collapse">
             <ul class="nav navbar-nav navbar-right">
                 <li><a href="home.php"><span class="glyphicon glyphicon-home"> 首页</span></a></li>
-                <li><a href="#"><span class="glyphicon glyphicon-log-in"> 登录</span></a></li>
+                <li><a href="index.php"><span class="glyphicon glyphicon-log-in"> 登录</span></a></li>
 <!--                <li><a href="#"><span class="glyphicon glyphicon-user"> 注册</span></a></li>-->
                 <li><a href="index.php"><span class="glyphicon glyphicon-log-out"> 退出</span></a></li>
 
