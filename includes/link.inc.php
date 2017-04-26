@@ -29,3 +29,7 @@
 
 <!--基本样式-->
 <link rel="stylesheet" href="styles/style.css">
+
+<!--引入bootstrap-table文件-->
+<link rel="stylesheet" href="styles\bootstrap-table.css">
+<script src="js\bootstrap-table.js"></script>

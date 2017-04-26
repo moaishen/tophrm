@@ -552,7 +552,7 @@ require "includes/header.inc.php";
                 <div class="form-group col-sm-offset-8 pull-right">
 
                     <input type="submit" class="btn btn-info" value="提交">
-                    <input type="button" class="submit btn btn-danger " value="取消">
+                    <input type="button" class="submit btn btn-danger" value="返回" onclick="goBack()">
                 </div>
             </form>
         </div>
@@ -567,7 +567,11 @@ require "includes/footer.inc.php";
 ?>
 
 <script src="js/input.inc.js"></script>
-
+<script>
+    function goBack(){
+        window.history.back()
+    }
+</script>
 
 </body>
 </html>

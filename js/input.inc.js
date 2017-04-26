@@ -2,8 +2,9 @@
  * Created by chinnsyoukich on 2017/4/21.
  */
 
-        //时间输入插件
-    $('.form_date').datetimepicker({
+
+//时间输入插件
+$('.form_date').datetimepicker({
         format: 'yyyy-mm-dd',
         language: 'zh-CN',
         pickDate: true,
@@ -13,9 +14,12 @@
         autoclose: true,
         startView: 2,
         minView: 'month'
-    })
+    });
 //初始化选择框
 $('.selectpicker').selectpicker({
 
     size: 16
-});
+    });
+
+
+

@@ -53,7 +53,7 @@ require "includes/header.inc.php";
                         <img src="images/tab1-2.png" alt="step2">
                         <h3 style="text-align: center">搜索查询</h3>
                         <p>根据需求搜索你所需要的人事信息。根据需求搜索你所需要的人事信息。根据需求搜索你所需要的人事信息。根据需求搜索你所需要的人事信息。根据需求搜索你所需要的人事信息。</p>
-                        <a herf="#" class="btn btn-info"><span class="glyphicon glyphicon-info-sign"></span> 进入</a>
+                        <a href="lookup.php" class="btn btn-info"><span class="glyphicon glyphicon-info-sign"></span> 进入</a>
                     </div>
                 </div>
 
