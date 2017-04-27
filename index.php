@@ -4,7 +4,8 @@
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <title>登录</title>
     <?php
-    require "includes/link.inc.php"
+    require "includes/link.inc.php";
+
     ?>
 
 </head>
@@ -70,6 +71,8 @@ require "includes/header.inc.php";
 
 <?php
 require "includes/footer.inc.php";
+
+
 ?>
 
 </body>

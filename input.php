@@ -5,6 +5,13 @@
   <title>录入信息</title>
   <?php
   require "includes/link.inc.php";
+//验证cookie
+  if(!isset($_COOKIE['username'])){
+      echo '<h1>:(</h1><br>你还没有登录，请返回重新登录！';
+      exit();
+  }
+
+
   ?>
 </head>
 <body data-spy="scroll" data-target="#myScrollspy">
@@ -37,7 +44,7 @@ require "includes/header.inc.php";
 
         <!--录入表单-->
         <div class="col-xs-9">
-            <form class="form-horizontal" id="form" method="POST" action="getInput.php">
+            <form class="form-horizontal" id="form" method="POST" action="input.php">
                 <h4 class="well" id="part-1">自然人信息</h4>
                 <div class="form-group">
                     <label for="name" class="col-sm-2 control-label">姓名：</label>

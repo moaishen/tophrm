@@ -22,8 +22,6 @@ $('#table').bootstrapTable({
     //detailView:true,
     clickToSelect: true,//点击行即可选中单选/复选框
 
-
-
     columns:[{
         field: 'state',
         checkbox: true,

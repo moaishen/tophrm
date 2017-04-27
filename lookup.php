@@ -16,6 +16,13 @@
 <script src="js/bootstrap-table.js"></script>
 <script src="js/bootstrap-table-zh-CN.js"></script>
 <?php
+
+//验证cookie
+if(!isset($_COOKIE['username'])){
+  echo '<h1>:(</h1><br>你还没有登录，请返回重新登录！';
+  exit();
+}
+
 require 'includes/header.inc.php'
 ?>
 

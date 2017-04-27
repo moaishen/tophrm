@@ -10,12 +10,10 @@
 <body>
 
 <?php
+
 require 'includes/logincheck.inc.php';
 
-?>
 
-
-<?php
 require "includes/header.inc.php";
 ?>
 
