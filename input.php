@@ -44,7 +44,7 @@ require "includes/header.inc.php";
 
         <!--录入表单-->
         <div class="col-xs-9">
-            <form class="form-horizontal" id="form" method="POST" action="input.php">
+            <form class="form-horizontal" id="form" method="POST" action="getInput.php">
                 <h4 class="well" id="part-1">自然人信息</h4>
                 <div class="form-group">
                     <label for="name" class="col-sm-2 control-label">姓名：</label>
@@ -576,7 +576,7 @@ require "includes/footer.inc.php";
 <script src="js/input.inc.js"></script>
 <script>
     function goBack(){
-        window.history.back()
+        window.location.href = 'home.php';
     }
 </script>
 

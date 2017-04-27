@@ -31,27 +31,33 @@ if(!isset($_COOKIE['username'])){
 require 'includes/header.inc.php'
 ?>
 <div class="container">
-  <div class="panel-body" style="padding-bottom:0px;margin: 50px">
-    <div class="panel panel-default">
-      <div class="panel-heading">查询条件</div>
-      <div class="panel-body">
-        <form id="formSearch" class="form-horizontal">
-          <div class="form-group" style="margin-top:15px">
-            <label class="control-label col-sm-1" >项目</label>
-            <div class="col-sm-3">
-              <input type="text" class="form-control"  placeholder="填写你要查询的项目，如：姓名">
-            </div>
-            <label class="control-label col-sm-1" >条件</label>
-            <div class="col-sm-3">
-              <input type="text" class="form-control"  placeholder="填写你要查询的内容">
-            </div>
-            <div class="col-sm-4" style="text-align:left;">
-              <button type="button" style="margin-left:50px" id="btn_query" class="btn btn-primary">查询</button>
-            </div>
-          </div>
-        </form>
-      </div>
-    </div>
+  <div class="jumbotron">
+    <hgroup>
+      <h2>下表显示本公司所有的人员信息，可以按需要搜索查询</h2>
+      <!--            <h4>如果需要账号，请直接联系管理员。</h4>-->
+    </hgroup>
+  </div>
+<!--  <div class="panel-body" style="padding-bottom:0px;margin: 50px">-->
+<!--    <div class="panel panel-default">-->
+<!--      <div class="panel-heading">查询条件</div>-->
+<!--      <div class="panel-body">-->
+<!--        <form id="formSearch" class="form-horizontal">-->
+<!--          <div class="form-group" style="margin-top:15px">-->
+<!--            <label class="control-label col-sm-1" >项目</label>-->
+<!--            <div class="col-sm-3">-->
+<!--              <input type="text" class="form-control"  placeholder="填写你要查询的项目，如：姓名">-->
+<!--            </div>-->
+<!--            <label class="control-label col-sm-1" >条件</label>-->
+<!--            <div class="col-sm-3">-->
+<!--              <input type="text" class="form-control"  placeholder="填写你要查询的内容">-->
+<!--            </div>-->
+<!--            <div class="col-sm-4" style="text-align:left;">-->
+<!--              <button type="button" style="margin-left:50px" id="btn_query" class="btn btn-primary">查询</button>-->
+<!--            </div>-->
+<!--          </div>-->
+<!--        </form>-->
+<!--      </div>-->
+<!--    </div>-->
 
     <div id="toolbar" class="btn-group">
       <button id="btn_add" type="button" class="btn btn-success" onclick="add()">
@@ -65,9 +71,20 @@ require 'includes/header.inc.php'
       </button>
     </div>
     <table id="table" ></table>
-  </div>
-</div>
+  <br>
+  <div class="form-group col-sm-offset-8 pull-right">
 
+    <!--    <input type="submit" class="btn btn-info" value="提交">-->
+    <input type="button" class="submit btn btn-danger" value="返回" onclick="goBack()">
+  </div>
+  </div>
+
+
+<script>
+  function goBack(){
+    window.location.href = 'home.php';
+  }
+</script>
 
 <!--<script src="js/lookup.inc.js"></script>-->
 

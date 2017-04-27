@@ -50,7 +50,7 @@ $result = $conn->query($sql);
         clickToSelect: true,//点击行即可选中单选/复选框
         search:true,
         showExport:true,
-        exportDataType:'selected',
+//        exportDataType:'selected',
 //        exportTypes:['txt','excel','pdf']
 
 
@@ -62,6 +62,10 @@ $result = $conn->query($sql);
             align: 'center'
             //valign: 'middle'
         },{
+            field:'employee_ID',
+            title:'员工编号',
+            sortable:true
+        },{
             field:'name',
             title:'姓名',
             sortable:true
@@ -72,6 +76,61 @@ $result = $conn->query($sql);
         },{
             field:'birthday',
             title:'出生日期',
+            sortable:true,
+            visible:false
+        },{
+            field:'telphone',
+            title:'手机号码',
+            sortable:true,
+            visible:false
+        },{
+            field:'email',
+            title:'电子邮箱',
+            sortable:true,
+            visible:false
+        },{
+            field:'degree',
+            title:'学历',
+            sortable:true,
+            visible:false
+//            width:200
+        },{
+            field:'major',
+            title:'专业',
+            sortable:true
+        },{
+            field:'university',
+            title:'毕业大学',
+            sortable:true
+        },{
+            field:'company',
+            title:'所属公司',
+            sortable:true
+        },{
+            field:'department_two',
+            title:'所属部门',
+            sortable:true
+        },{
+            field:'join_date',
+            title:'入职日期',
+            sortable:true
+        },{
+            field:'job_degree',
+            title:'职等',
+            sortable:true,
+            visible:false
+        },{
+            field:'job_name',
+            title:'职称',
+            sortable:true,
+            visible:false
+        },{
+            field:'job_content',
+            title:'职务',
+            sortable:true
+        },{
+            field:'job_status',
+            title:'在职状况',
             sortable:true
         }],
         data:[
@@ -80,11 +139,40 @@ $result = $conn->query($sql);
                 while($row = $result->fetch_assoc()){
                     global $data;
                     $data = '{';
+                    $data .= "employee_ID:'{$row["employee_ID"]}',";
+                    $data .= "\n";
                     $data .= "name:'{$row["employee_name"]}',";
                     $data .= "\n";
                     $data .= "sex:'{$row["sex"]}',";
                     $data .= "\n";
-                    $data .= "birthday:'{$row["birthday"]}'";
+                    $data .= "birthday:'{$row["birthday"]}',";
+                    $data .= "\n";
+                    $data .= "telphone:'{$row["telphone"]}',";
+                    $data .= "\n";
+                    $data .= "email:'{$row["email"]}',";
+                    $data .= "\n";
+                    $data .= "degree:'{$row["degree"]}',";
+                    $data .= "\n";
+                    $data .= "major:'{$row["major"]}',";
+                    $data .= "\n";
+                    $data .= "university:'{$row["university"]}',";
+                    $data .= "\n";
+                    $data .= "company:'{$row["company"]}',";
+                    $data .= "\n";
+                    $data .= "department_two:'{$row["department_two"]}',";
+                    $data .= "\n";
+                    $data .= "join_date:'{$row["join_date"]}',";
+                    $data .= "\n";
+                    $data .= "job_degree:'{$row["job_degree"]}',";
+                    $data .= "\n";
+                    $data .= "job_name:'{$row["job_name"]}',";
+                    $data .= "\n";
+                    $data .= "job_content:'{$row["job_content"]}',";
+                    $data .= "\n";
+                    $data .= "job_name:'{$row["job_name"]}',";
+                    $data .= "\n";
+                    $data .= "job_status:'{$row["job_status"]}'";
+//                    $data .= "\n";
                     $data .= '},';
                     $data .= "\n";
                     echo $data;

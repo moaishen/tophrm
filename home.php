@@ -11,7 +11,9 @@
 
 <?php
 
-require 'includes/logincheck.inc.php';
+if(!isset($_COOKIE['username'])){
+    require 'includes/logincheck.inc.php';
+}
 
 
 require "includes/header.inc.php";
