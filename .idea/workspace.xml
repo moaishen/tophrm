@@ -2,12 +2,103 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="135dae40-77f3-4ab8-ab9e-adc2d444c1d3" name="默认的" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/extensions/tree-column/icon.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/includes/lookup.inc.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/extensions/accent-neutralise/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/extensions/accent-neutralise/bootstrap-table-accent-neutralise.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/extensions/accent-neutralise/extension.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/extensions/angular/bootstrap-table-angular.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/extensions/auto-refresh/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/extensions/auto-refresh/bootstrap-table-auto-refresh.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/extensions/auto-refresh/bootstrap-table-auto-refresh.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/extensions/auto-refresh/extension.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/extensions/click-edit-row/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/extensions/click-edit-row/bootstrap-table-click-edit-row.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/extensions/click-edit-row/bootstrap-table-click-edit-row.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/extensions/cookie/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/extensions/cookie/bootstrap-table-cookie.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/extensions/cookie/extension.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/extensions/copy-rows/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/extensions/copy-rows/bootstrap-table-copy-rows.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/extensions/copy-rows/extension.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/extensions/editable/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/extensions/editable/bootstrap-table-editable.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/extensions/editable/extension.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/extensions/export/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/extensions/export/bootstrap-table-export.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/extensions/export/extension.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/extensions/export/tableExport.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/extensions/filter-control/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/extensions/filter-control/bootstrap-table-filter-control.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/extensions/filter-control/bootstrap-table-filter-control.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/extensions/filter-control/extension.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/extensions/filter/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/extensions/filter/bootstrap-table-filter.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/extensions/filter/extension.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/extensions/flat-json/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/extensions/flat-json/bootstrap-table-flat-json.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/extensions/flat-json/extension.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/extensions/group-by-v2/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/extensions/group-by-v2/bootstrap-table-group-by.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/extensions/group-by-v2/bootstrap-table-group-by.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/extensions/group-by-v2/extension.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/extensions/group-by/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/extensions/group-by/bootstrap-table-group-by.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/extensions/group-by/bootstrap-table-group-by.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/extensions/group-by/extension.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/extensions/i18n-enhance/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/extensions/i18n-enhance/bootstrap-table-i18n-enhance.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/extensions/i18n-enhance/extension.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/extensions/key-events/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/extensions/key-events/bootstrap-table-key-events.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/extensions/key-events/extension.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/extensions/mobile/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/extensions/mobile/bootstrap-table-mobile.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/extensions/mobile/extension.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/extensions/multi-column-toggle/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/extensions/multi-column-toggle/bootstrap-table-multi-toggle.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/extensions/multi-column-toggle/extension.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/extensions/multiple-search/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/extensions/multiple-search/bootstrap-table-multiple-search.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/extensions/multiple-search/extension.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/extensions/multiple-selection-row/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/extensions/multiple-selection-row/bootstrap-table-multiple-selection-row.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/extensions/multiple-selection-row/bootstrap-table-multiple-selection-row.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/extensions/multiple-selection-row/extension.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/extensions/multiple-sort/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/extensions/multiple-sort/bootstrap-table-multiple-sort.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/extensions/multiple-sort/extension.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/extensions/natural-sorting/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/extensions/natural-sorting/bootstrap-table-natural-sorting.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/extensions/natural-sorting/extension.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/extensions/print/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/extensions/print/bootstrap-table-print.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/extensions/reorder-columns/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/extensions/reorder-columns/bootstrap-table-reorder-columns.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/extensions/reorder-columns/extension.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/extensions/reorder-rows/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/extensions/reorder-rows/bootstrap-table-reorder-rows.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/extensions/reorder-rows/bootstrap-table-reorder-rows.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/extensions/reorder-rows/extension.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/extensions/resizable/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/extensions/resizable/bootstrap-table-resizable.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/extensions/resizable/extension.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/extensions/select2-filter/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/extensions/select2-filter/bootstrap-table-select2-filter.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/extensions/select2-filter/extension.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/extensions/sticky-header/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/extensions/sticky-header/bootstrap-table-sticky-header.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/extensions/sticky-header/bootstrap-table-sticky-header.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/extensions/sticky-header/extension.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/extensions/toolbar/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/extensions/toolbar/bootstrap-table-toolbar.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/extensions/toolbar/extension.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/extensions/tree-column/bootstrap-table-tree-column.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/extensions/tree-column/bootstrap-table-tree-column.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/extensions/tree-column/bootstrap-table-tree-column.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/extensions/tree-column/extension.json" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/lookup.inc.js" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/home.php" afterPath="$PROJECT_DIR$/home.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/includes/logincheck.inc.php" afterPath="$PROJECT_DIR$/includes/logincheck.inc.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/input.php" afterPath="$PROJECT_DIR$/input.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/lookup.inc.js" afterPath="$PROJECT_DIR$/js/lookup.inc.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lookup.php" afterPath="$PROJECT_DIR$/lookup.php" />
     </list>
     <ignored path="HRM.iws" />
@@ -29,7 +120,56 @@
     <favorites_list name="HRM" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="lookup.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/lookup.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.83657587">
+              <caret line="51" column="15" selection-start-line="51" selection-start-column="15" selection-end-line="51" selection-end-column="15" />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="lookup.inc.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/includes/lookup.inc.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-28.7">
+              <caret line="46" column="24" selection-start-line="46" selection-start-column="24" selection-end-line="46" selection-end-column="24" />
+              <folding>
+                <marker date="1493271569555" expanded="true" signature="383:409" placeholder="SELECT * FRO... tbl_employee" />
+                <marker date="1493271569555" expanded="true" signature="455:470" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="header.inc.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/includes/header.inc.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-6.3">
+              <caret line="14" column="22" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="getInput.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/getInput.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="14.0">
+              <caret line="33" column="32" selection-start-line="33" selection-start-column="20" selection-end-line="33" selection-end-column="32" />
+              <folding>
+                <marker date="1493110501887" expanded="true" signature="621:4357" placeholder="INSERT INTO tbl_employee... " />
+                <marker date="1493110501887" expanded="true" signature="4381:4393" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -53,7 +193,6 @@
         <option value="$PROJECT_DIR$/php/get.php" />
         <option value="$PROJECT_DIR$/php/getForm.php" />
         <option value="$PROJECT_DIR$/php/getInput.php" />
-        <option value="$PROJECT_DIR$/includes/header.inc.php" />
         <option value="$PROJECT_DIR$/getInput.php" />
         <option value="$PROJECT_DIR$/js/input.inc.js" />
         <option value="$PROJECT_DIR$/includes/func.inc.php" />
@@ -61,11 +200,14 @@
         <option value="$PROJECT_DIR$/query.php" />
         <option value="$PROJECT_DIR$/js/example.js" />
         <option value="$PROJECT_DIR$/js/lookup.inc.js" />
-        <option value="$PROJECT_DIR$/lookup.php" />
         <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/includes/logincheck.inc.php" />
         <option value="$PROJECT_DIR$/home.php" />
         <option value="$PROJECT_DIR$/input.php" />
+        <option value="$PROJECT_DIR$/includes/header.inc.php" />
+        <option value="$PROJECT_DIR$/database/json.php" />
+        <option value="$PROJECT_DIR$/includes/lookup.inc.php" />
+        <option value="$PROJECT_DIR$/lookup.php" />
       </list>
     </option>
   </component>
@@ -79,8 +221,8 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="295" />
-    <option name="y" value="14" />
+    <option name="x" value="427" />
+    <option name="y" value="48" />
     <option name="width" value="1454" />
     <option name="height" value="999" />
   </component>
@@ -145,7 +287,35 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="HRM" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="HRM" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="includes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="HRM" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="HRM" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="database" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -161,16 +331,17 @@
     <property name="last_opened_file_path" value="$USER_HOME$/Desktop/编程练习/bootstrap练习项目/practice2" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\wamp\www\HRM\database" />
-      <recent name="C:\wamp\www\HRM" />
-      <recent name="C:\wamp\www\HRM\js" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\wamp\www\HRM\js\extensions\export" />
       <recent name="C:\wamp\www\HRM\js" />
       <recent name="C:\wamp\www\HRM\styles" />
       <recent name="C:\wamp\www\HRM\images" />
       <recent name="C:\wamp\www\HRM" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\wamp\www\HRM\database" />
+      <recent name="C:\wamp\www\HRM" />
+      <recent name="C:\wamp\www\HRM\js" />
     </key>
   </component>
   <component name="RunManager">
@@ -217,10 +388,10 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="295" y="14" width="1454" height="999" extended-state="1" />
-    <editor active="false" />
+    <frame x="427" y="48" width="1454" height="999" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22158274" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22158274" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="版本控制" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -256,22 +427,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/lookup.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/includes/link.inc.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="30" selection-end-column="47" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/includes/func.inc.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -523,24 +678,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/getInput.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="3.9405594">
-          <caret line="161" column="14" selection-start-line="161" selection-start-column="14" selection-end-line="161" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/includes/header.inc.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.513986">
-          <caret line="26" column="38" selection-start-line="26" selection-start-column="38" selection-end-line="26" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/bootstrap-table-zh-CN.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -548,6 +690,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1493184268182" expanded="true" signature="18758:18770" placeholder="..." />
+            <marker date="1493184268182" expanded="true" signature="63885:64084" placeholder="..." />
+            <marker date="1493184268182" expanded="true" signature="66704:66880" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -588,26 +735,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/lookup.inc.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-12.1">
-          <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/input.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-8.4">
           <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lookup.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3540856">
-          <caret line="16" column="51" selection-start-line="16" selection-start-column="51" selection-end-line="16" selection-end-column="51" />
           <folding />
         </state>
       </provider>
@@ -633,6 +764,62 @@
         <state vertical-scroll-proportion="0.39325842">
           <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/getInput.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="14.0">
+          <caret line="33" column="32" selection-start-line="33" selection-start-column="20" selection-end-line="33" selection-end-column="32" />
+          <folding>
+            <marker date="1493110501887" expanded="true" signature="621:4357" placeholder="INSERT INTO tbl_employee... " />
+            <marker date="1493110501887" expanded="true" signature="4381:4393" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/includes/header.inc.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.3">
+          <caret line="14" column="22" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/extensions/print/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/includes/lookup.inc.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-28.7">
+          <caret line="46" column="24" selection-start-line="46" selection-start-column="24" selection-end-line="46" selection-end-column="24" />
+          <folding>
+            <marker date="1493271569555" expanded="true" signature="383:409" placeholder="SELECT * FRO... tbl_employee" />
+            <marker date="1493271569555" expanded="true" signature="455:470" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/extensions/export/tableExport.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lookup.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.83657587">
+          <caret line="51" column="15" selection-start-line="51" selection-start-column="15" selection-end-line="51" selection-end-column="15" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
