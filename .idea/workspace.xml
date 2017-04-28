@@ -2,13 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="135dae40-77f3-4ab8-ab9e-adc2d444c1d3" name="默认的" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/edit.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/getEdit.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/getInput.php" afterPath="$PROJECT_DIR$/getInput.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/includes/lookup.inc.php" afterPath="$PROJECT_DIR$/includes/lookup.inc.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/input.php" afterPath="$PROJECT_DIR$/input.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lookup.php" afterPath="$PROJECT_DIR$/lookup.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/tophrm.sql" afterPath="$PROJECT_DIR$/database/tophrm.sql" />
     </list>
     <ignored path="HRM.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -188,8 +184,8 @@
       <file leaf-file-name="input.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/input.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.7392996">
-              <caret line="238" column="65" selection-start-line="238" selection-start-column="65" selection-end-line="238" selection-end-column="65" />
+            <state vertical-scroll-proportion="0.24902724">
+              <caret line="220" column="40" selection-start-line="220" selection-start-column="40" selection-end-line="220" selection-end-column="40" />
               <folding />
             </state>
           </provider>
@@ -250,8 +246,8 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="224" />
-    <option name="y" value="69" />
+    <option name="x" value="294" />
+    <option name="y" value="81" />
     <option name="width" value="1495" />
     <option name="height" value="969" />
   </component>
@@ -375,7 +371,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="224" y="69" width="1495" height="969" extended-state="1" />
+    <frame x="294" y="81" width="1495" height="969" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19916143" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -720,13 +716,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/database/tophrm.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.08171206">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.65543073">
@@ -945,10 +934,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/database/tophrm.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/input.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7392996">
-          <caret line="238" column="65" selection-start-line="238" selection-start-column="65" selection-end-line="238" selection-end-column="65" />
+        <state vertical-scroll-proportion="0.24902724">
+          <caret line="220" column="40" selection-start-line="220" selection-start-column="40" selection-end-line="220" selection-end-column="40" />
           <folding />
         </state>
       </provider>
