@@ -22,6 +22,7 @@ $result = $conn->query($sql);
 
 
 ?>
+<!--<script src="js\jquery.min.js"></script>-->
 
 <script>
 
@@ -50,11 +51,17 @@ $result = $conn->query($sql);
         clickToSelect: true,//点击行即可选中单选/复选框
         search:true,
         showExport:true,
+        uniqueId:'employee_ID',
 //        exportDataType:'selected',
 //        exportTypes:['txt','excel','pdf']
+        onClickRow:function(row){
+//            var info = JSON.stringify(row);
+//            alert(row.name);
+            $('#selcted').attr("value",row.employee_ID);
+        },
 
 
-
+        //填充数据
         columns:[{
             field: 'state',
             checkbox: true,
@@ -181,7 +188,15 @@ $result = $conn->query($sql);
 
             ?>
         ]
+
+
+
+
     });
+
+
+
+
 </script>
 
 <?php
@@ -192,8 +207,33 @@ $conn->close();
 
 
 <script>
+
+//    新增
     function add(){
         window.location.href = "input.php";
+    }
+
+    //删除行
+
+   function remove(){
+    var ids = $.map($table.bootstrapTable('getSelections'), function (row){
+        return row.id;
+    });
+    $table.bootstrapTable('remove',{
+        field:'id',
+        values:ids
+    })
+}
+
+//修改行
+
+
+
+    function edit(){
+        var info = $('#table').bootstrapTable('getSelections');
+//        var stringInfo = JSON.stringify(info);
+        var id = info[0].employee_ID;
+
     }
 </script>
 

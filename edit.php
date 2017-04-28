@@ -1,30 +1,46 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>录入信息</title>
-  <?php
-  require "includes/link.inc.php";
-//验证cookie
-  if(!isset($_COOKIE['username'])){
-      echo '<h1>:(</h1><br>你还没有登录，请返回重新登录！';
-      exit();
-  }
-
-
-  ?>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>修改信息</title>
+    <?php
+    require "includes/link.inc.php";
+    //验证cookie
+    if(!isset($_COOKIE['username'])){
+        echo '<h1>:(</h1><br>你还没有登录，请返回重新登录！';
+        exit();
+    }
+    ?>
 </head>
 <body data-spy="scroll" data-target="#myScrollspy">
 <?php
 
 require "includes/header.inc.php";
+//echo $_POST['id'];
+
+//连接数据库
+define("db_host","localhost");
+define("db_user","root");
+define("db_password","123456");
+define("db_database","tophrm");
+
+$conn = mysqli_connect(db_host,db_user,db_password,db_database) or die("数据库连接失败");
+
+$conn->query('SET NAMES UTF8') or die('字符编码错误！');
+
+$sql = 'SELECT * FROM tbl_employee WHERE employee_ID ='.$_POST['id'].'';
+
+$result = $conn->query($sql) or die("数据库查询失败!");
+$row = $result->fetch_assoc();
+//print_r($row);
+
 ?>
 
 <div class="container">
     <div class="jumbotron">
         <hgroup>
             <h2>员工基本信息</h2>
-            <p>请录入你的基本信息</p>
+            <p>请修改你的基本信息</p>
         </hgroup>
 
     </div>
@@ -44,12 +60,12 @@ require "includes/header.inc.php";
 
         <!--录入表单-->
         <div class="col-xs-9">
-            <form class="form-horizontal" id="form" method="POST" action="getInput.php">
+            <form class="form-horizontal" id="form" method="POST" action="getEdit.php">
                 <h4 class="well" id="part-1">自然人信息</h4>
                 <div class="form-group">
                     <label for="name" class="col-sm-2 control-label">姓名：</label>
                     <div class="col-sm-10">
-                        <input class="form-control" type="text" name="name" placeholder="请输入你的名字" maxlength="10" required>
+                        <input value="<?php echo $row['employee_name'];?>" class="form-control" type="text" name="name" placeholder="请输入你的名字" maxlength="10" required>
                     </div>
                 </div>
                 <div class="form-group">
@@ -64,7 +80,7 @@ require "includes/header.inc.php";
                     <div class="col-sm-10">
                         <!--<input type="text" class="form-control" id="txtDtbegin" placeholder="例：2012-10-12">-->
                         <div class="input-group date form_date ">
-                            <input class="form-control" type="text" value="" name="birthday" placeholder="例：2012-10-12" required>
+                            <input value="<?php echo $row['birthday'];?>" class="form-control" type="text"  name="birthday" placeholder="例：2012-10-12" required>
                             <span class="input-group-addon"><span class="glyphicon glyphicon-remove"></span></span>
                             <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>
                         </div>
@@ -73,7 +89,7 @@ require "includes/header.inc.php";
                 <div class="form-group">
                     <label for="birthday" class="col-sm-2 control-label">籍贯：</label>
                     <div class="col-sm-4">
-                        <input type="text" name="hometown" class="form-control" placeholder="例：上海市" maxlength="10" required>
+                        <input value="<?php echo $row['hometown'];?>" type="text" name="hometown" class="form-control" placeholder="例：上海市" maxlength="10" required>
                     </div>
                     <label for="birthday" class="col-sm-2 control-label">婚姻状况：</label>
                     <div class="col-sm-4">
@@ -88,13 +104,13 @@ require "includes/header.inc.php";
                 <div class="form-group">
                     <label for="birthday" class="col-sm-2 control-label">身份证号码：</label>
                     <div class="col-sm-10">
-                        <input type="text" id="number" name="person_num" class="form-control" placeholder="请输入中国大陆18位身份证号" maxlength="18" required>
+                        <input value="<?php echo $row['person_num'];?>" type="text" id="number" name="person_num" class="form-control" placeholder="请输入中国大陆18位身份证号" maxlength="18" required>
                     </div>
                 </div>
                 <div class="form-group">
                     <label for="birthday" class="col-sm-2 control-label">现居住地址：</label>
                     <div class="col-sm-10">
-                        <input type="text" name="address" class="form-control" maxlength="50" required>
+                        <input value="<?php echo $row['address'];?>" type="text" name="address" class="form-control" maxlength="50" required>
                     </div>
                 </div>
 
@@ -106,15 +122,15 @@ require "includes/header.inc.php";
                 <div class="form-group">
                     <label for="telphone" class="col-sm-2 control-label">手机号码：</label>
                     <div class="col-sm-4">
-                        <input type="text" name="telphone" class="form-control" placeholder="请输入中国大陆11位手机号" maxlength="11" required >
+                        <input value="<?php echo $row['telphone'];?>" type="text" name="telphone" class="form-control" placeholder="请输入中国大陆11位手机号" maxlength="11" required >
                     </div>
                     <label for="telphone" class="col-sm-2 control-label">微信号：</label>
                     <div class="col-sm-4">
-                        <input type="text" name="wechat" class="form-control">
+                        <input value="<?php echo $row['wechat'];?>" type="text" name="wechat" class="form-control">
                     </div>
                 </div>
                 <div class="form-group">
-                    <label for="telphone" class="col-sm-2 control-label">电子邮箱：</label>
+                    <label value="<?php echo $row['email'];?>" for="telphone" class="col-sm-2 control-label">电子邮箱：</label>
                     <div class="col-sm-10">
                         <input type="email" name="email" class="form-control">
                     </div>
@@ -145,26 +161,26 @@ require "includes/header.inc.php";
                     </div>
                     <label for="telphone" class="col-sm-2 control-label">专业：</label>
                     <div class="col-sm-4">
-                        <input type="text" name="major" class="form-control" maxlength="20" >
+                        <input value="<?php echo $row['major'];?>" type="text" name="major" class="form-control" maxlength="20" >
                     </div>
                 </div>
 
                 <div class="form-group">
                     <label for="telphone" class="col-sm-2 control-label">毕业大学：</label>
                     <div class="col-sm-10">
-                        <input type="text" name="university" class="form-control" maxlength="20" >
+                        <input value="<?php echo $row['university'];?>" type="text" name="university" class="form-control" maxlength="20" >
                     </div>
                 </div>
                 <div class="form-group">
                     <label for="telphone" class="col-sm-2 control-label">毕业研究生院校：</label>
                     <div class="col-sm-10">
-                        <input type="text" name="graduate_school" class="form-control" placeholder="研究生毕业选填" maxlength="20">
+                        <input value="<?php echo $row['graduate_school'];?>" type="text" name="graduate_school" class="form-control" placeholder="研究生毕业选填" maxlength="20">
                     </div>
                 </div>
                 <div class="form-group">
                     <label for="" class="col-sm-2 control-label">技能/职称证书：</label>
                     <div class="col-sm-10">
-                        <input type="text" name="skill" class="form-control" placeholder="例：CPA" maxlength="20">
+                        <input value="<?php echo $row['skill'];?>" type="text" name="skill" class="form-control" placeholder="例：CPA" maxlength="20">
                     </div>
                 </div>
 
@@ -175,7 +191,7 @@ require "includes/header.inc.php";
                 <div class="form-group">
                     <label for="" class="col-sm-2 control-label">员工编号：</label>
                     <div class="col-sm-10">
-                        <input type="text" name="employee_ID" class="form-control" maxlength="8" required>
+                        <input value="<?php echo $row['employee_ID'];?>" type="text" name="employee_ID" class="form-control" maxlength="8" required>
                     </div>
                 </div>
 
@@ -218,25 +234,26 @@ require "includes/header.inc.php";
                     </div>
                 </div>
 
-                <div class="form-group">
-                    <label for="telphone" class="col-sm-2 control-label">一级部门：</label>
-                    <div class="col-sm-4">
-                        <input  type="text" name="department_one" class="form-control" maxlength="20" >
+
+                    <div class="form-group">
+                        <label for="telphone" class="col-sm-2 control-label">一级部门：</label>
+                        <div class="col-sm-4">
+                            <input value="<?php echo $row['department_one'];?>" type="text" name="department_one" class="form-control" maxlength="20" >
+                        </div>
+                        <label for="telphone" class="col-sm-2 control-label">二级部门：</label>
+                        <div class="col-sm-4">
+                            <input value="<?php echo $row['department_two'];?>" type="text" name="department_two" class="form-control" maxlength="20" >
+                        </div>
                     </div>
-                    <label for="telphone" class="col-sm-2 control-label">二级部门：</label>
-                    <div class="col-sm-4">
-                        <input  type="text" name="department_two" class="form-control" maxlength="20" >
-                    </div>
-                </div>
 
                 <div class="form-group">
                     <label for="telphone" class="col-sm-2 control-label">三级部门：</label>
                     <div class="col-sm-4">
-                        <input  type="text" name="department_three" class="form-control" maxlength="20" >
+                        <input value="<?php echo $row['department_three'];?>" type="text" name="department_three" class="form-control" maxlength="20" >
                     </div>
                     <label for="telphone" class="col-sm-2 control-label">四级部门：</label>
                     <div class="col-sm-4">
-                        <input  type="text" name="department_four" class="form-control" maxlength="20" >
+                        <input value="<?php echo $row['department_four'];?>" type="text" name="department_four" class="form-control" maxlength="20" >
                     </div>
                 </div>
 
@@ -245,7 +262,7 @@ require "includes/header.inc.php";
                     <div class="col-sm-10">
                         <!--<input type="text" class="form-control" id="startdate" placeholder="例：2012-10-12">-->
                         <div class="input-group date form_date ">
-                            <input class="form-control" name="join_date" type="text" value="" placeholder="例：2012-10-12" required>
+                            <input value="<?php echo $row['join_date'];?>" class="form-control" name="join_date" type="text" value="" placeholder="例：2012-10-12" required>
                             <span class="input-group-addon"><span class="glyphicon glyphicon-remove"></span></span>
                             <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>
                         </div>
@@ -463,7 +480,7 @@ require "includes/header.inc.php";
                 <div class="form-group">
                     <label for="" class="col-sm-2 control-label">职务：</label>
                     <div class="col-sm-10">
-                        <textarea name="job_content" class="form-control" rows="4"></textarea>
+                        <textarea name="job_content" class="form-control" rows="4"><?php echo $row['job_content']?></textarea>
                     </div>
                 </div>
 
@@ -471,8 +488,8 @@ require "includes/header.inc.php";
                     <label for="state" class="col-sm-2 control-label">在职状况：</label>
                     <div class="col-sm-10">
                         <input type="radio" name="job_status" value="实习"> 实习
-                        <input type="radio" name="job_status" value="试用" checked="checked"> 试用
-                        <input type="radio" name="job_status" value="转正"> 转正
+                        <input type="radio" name="job_status" value="试用" > 试用
+                        <input type="radio" name="job_status" value="转正" checked="checked"> 转正
                         <input type="radio" name="job_status" value="离职"> 离职
 
                     </div>
@@ -513,7 +530,7 @@ require "includes/header.inc.php";
                     <label for="" class="col-sm-2 control-label">合同开始日：</label>
                     <div class="col-sm-4">
                         <div class="input-group date form_date ">
-                            <input class="form-control" name="contract_start" type="text" value="" placeholder="例：2012-10-12" required >
+                            <input value="<?php echo $row['contract_start'];?>" class="form-control" name="contract_start" type="text" value="" placeholder="例：2012-10-12" required >
                             <span class="input-group-addon"><span class="glyphicon glyphicon-remove"></span></span>
                             <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>
                         </div>
@@ -522,7 +539,7 @@ require "includes/header.inc.php";
                     <label for="" class="col-sm-2 control-label">合同结束日：</label>
                     <div class="col-sm-4">
                         <div class="input-group date form_date ">
-                            <input class="form-control" name="contract_end" type="text" value="" placeholder="例：2012-10-12" required>
+                            <input value="<?php echo $row['contract_end'];?>" class="form-control" name="contract_end" type="text" value="" placeholder="例：2012-10-12" required>
                             <span class="input-group-addon"><span class="glyphicon glyphicon-remove"></span></span>
                             <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>
                         </div>
@@ -533,31 +550,31 @@ require "includes/header.inc.php";
                 <div class="form-group">
                     <label for="" class="col-sm-2 control-label">开户银行：</label>
                     <div class="col-sm-10">
-                        <input type="text" class="form-control" name="bank" placeholder="例：招商银行陆家嘴支行">
+                        <input value="<?php echo $row['bank'];?>" type="text" class="form-control" name="bank" placeholder="例：招商银行陆家嘴支行">
                     </div>
                 </div>
                 <div class="form-group">
                     <label for="" class="col-sm-2 control-label">银行卡号：</label>
                     <div class="col-sm-10">
-                        <input type="text" name="bank_card" class="form-control">
+                        <input value="<?php echo $row['bank_card'];?>" type="text" name="bank_card" class="form-control">
                     </div>
                 </div>
                 <div class="form-group">
                     <label for="" class="col-sm-2 control-label">公积金账号：</label>
                     <div class="col-sm-10">
-                        <input type="text" name="reserve_num" class="form-control">
+                        <input value="<?php echo $row['reserve_num'];?>" type="text" name="reserve_num" class="form-control">
                     </div>
                 </div>
                 <div class="form-group">
                     <label for="" class="col-sm-2 control-label">备注：</label>
                     <div class="col-sm-10">
-                        <textarea class="form-control" name="others" rows="4"></textarea>
+                        <textarea class="form-control" name="others" rows="4"><?php echo $row['others'];?></textarea>
                     </div>
                 </div>
 
                 <div class="form-group col-sm-offset-8 pull-right">
 
-                    <input type="submit" class="btn btn-info" value="提交">
+                    <input type="submit" class="btn btn-info" value="保存">
                     <input type="button" class="submit btn btn-danger" value="返回" onclick="goBack()">
                 </div>
             </form>
@@ -569,13 +586,15 @@ require "includes/header.inc.php";
 
 
 <?php
+
+$conn->close();
 require "includes/footer.inc.php";
 ?>
 
 <script src="js/input.inc.js"></script>
 <script>
     function goBack(){
-        window.location.href = 'home.php';
+        window.location.href = 'lookup.php';
     }
 </script>
 

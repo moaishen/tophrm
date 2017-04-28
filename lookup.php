@@ -30,6 +30,7 @@ if(!isset($_COOKIE['username'])){
 
 require 'includes/header.inc.php'
 ?>
+
 <div class="container">
   <div class="jumbotron">
     <hgroup>
@@ -59,16 +60,22 @@ require 'includes/header.inc.php'
 <!--      </div>-->
 <!--    </div>-->
 
-    <div id="toolbar" class="btn-group">
-      <button id="btn_add" type="button" class="btn btn-success" onclick="add()">
-        <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>新增
-      </button>
-      <button id="btn_edit" type="button" class="btn btn-warning">
-        <span class="glyphicon glyphicon-pencil" aria-hidden="true"></span>修改
-      </button>
-      <button id="btn_delete" type="button" class="btn btn-danger">
-        <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>删除
-      </button>
+    <div id="toolbar" >
+      <form action="edit.php" method="post" >
+        <button id="btn_add" type="button" class="btn btn-success" onclick="add()">
+          <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>新增
+        </button>
+
+        <input type="hidden" id="selcted" name="id">
+        <button id="btn_edit" type="submit" class="btn btn-warning" ">
+          <span class="glyphicon glyphicon-pencil" aria-hidden="true"></span>修改
+        </button>
+      </form>
+
+
+<!--      <button id="btn_delete" type="button" class="btn btn-danger" onclick="remove()">-->
+<!--        <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>删除-->
+<!--      </button>-->
     </div>
     <table id="table" ></table>
   <br>
